@@ -1,0 +1,92 @@
+/* Body styles */
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: linear-gradient(rgb(225, 0, 255), rgb(255, 255, 0));/* Apply linear gradient background */
+}
+
+/* Header styles */
+header {
+    background-color: #af4c87;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px; 
+    width: 1600px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+
+/* Main section styles */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    border: 2px solid #af4c87;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #af4c87;
+}
+
+.lyrics:hover {
+    color: #fff;/* Change text color on hover */
+    border-radius: 50%; /* Make lyrics container round on hover */
+    background-image: linear-gradient(rgb(225, 0, 255), rgb(255, 255, 0));
+}
+
+/* lyrics styles */
+.lyrics {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    border-radius: 50%; /* Make lyrics container round */
+    overflow: hidden;
+    padding: 20px; 
+    position: relative;
+}
+
+.lyrics::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    border: 2px solid #af4c87;
+    border-radius: 10px;
+}
+
+.lyrics::after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    content: "";
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Yelling */
+.yelling {
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+/* Sad */
+.sad {
+    color: #666;
+}
+
+/* Happy */
+.happy {
+    color: #af4c87;
+}
